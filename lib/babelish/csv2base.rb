@@ -175,11 +175,10 @@ module Babelish
 
     def hash_to_output(content = {})
       output = ''
-      indentation = content.map(&:first).max { |a, b| a.length <=> b.length }.length
       if content && content.size > 0
         content.each do |key, value|
           comment = @comments[key]
-          output += get_row_format(key, value, comment, indentation - key.length)
+          output += get_row_format(key, value, comment, 0)
         end
       end
       return output
