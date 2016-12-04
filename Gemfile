@@ -1,5 +1,6 @@
 source "http://rubygems.org"
 
+gem "babelish", :git => "git://github.com/mishingena/Babelish.git"
 # Specify your gem's dependencies in teachmehowtomakearubygem.gemspec
 gemspec
 
